@@ -1,13 +1,9 @@
 "use strict";
 
-var a = ["a", "b", "c"];
 Vue.config.devtools = true;
-
-for (var _i = 0; _i < a.length; _i++) {
-  var char = a[_i];
-  console.log(char);
-}
-
+Vue.component('todo-item', {
+  template: '<li>This is a todo</li>'
+});
 var app = new Vue({
   el: '#app',
   data: {
